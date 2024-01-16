@@ -1,5 +1,5 @@
 ---
-title: "Pengaruh Produksi Beras, Cadangan Devisa Terhadap Impor Beras Di Indonesia Periode Tahun 2013-2022"
+title: "Pengaruh Produksi Beras Dan Cadangan Devisa Terhadap Impor Beras Di Indonesia Periode Tahun 2013-2022"
 subtitle: "Metode Penelitian Politeknik APP Jakarta"
 author: "Panji Dwi Prawira (220204190)"
 date: 2024-01-16
