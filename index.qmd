@@ -1,0 +1,150 @@
+---
+title: "Pengaruh Produksi Beras, Cadangan Devisa Terhadap Impor Beras Di Indonesia Periode Tahun 2013-2022"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Panji Dwi Prawira (220204190)"
+date: 2024-01-16
+number-sections: true
+format:
+  html: default
+  docx: default
+---
+
+
+![Politeknik APP Jakarta](poltekapp.jpg)
+
+
+## Pendahuluan
+
+### Latar Belakang
+
+Indonesia dengan sumber daya alamnya yang melimpah di seluruh kepulauan, terkenal sebagai negara agraris di mana mayoritas penduduknya bekerja di sektor pertanian. Pertanian berperan sebagai sektor utama dan memiliki peran kunci dalam perekonomian nasional. Hal ini didukung oleh iklim tropis Indonesia dan struktur tanah yang memungkinkan untuk pertanian. Salah satu produk pertanian yang penting adalah beras, menjadi makanan pokok bagi warga Indonesia, memenuhi kebutuhan konsumsi seluruh populasi.
+
+Meskipun produksi beras dalam negeri diharapkan cukup untuk memenuhi kebutuhan penduduk Indonesia, kenyataannya sering tidak mencukupi, sehingga pemerintah melakukan impor beras untuk menjaga stok yang mencukupi di dalam negeri. seperti yang dikutip oleh Edward (2013), menjelaskan bahwa konsumsi beras per kapita per tahun di Indonesia mencapai 139,5 kg, melebihi rata-rata global sebesar 60 kg per tahun. Konsumsi beras yang tinggi di Indonesia menuntut keseimbangan dengan produksi dalam negeri untuk memenuhi kebutuhan nasional. Oleh karena itu, pemerintah harus memberikan perhatian penuh untuk mencegah krisis pangan. Menurut Wiguna (2014), jika barang dan jasa luar negeri memiliki kualitas baik dengan harga yang lebih murah, kecenderungan untuk mengimpor dari negara lain akan meningkat. Situasi ekonomi Indonesia dipengaruhi oleh ketersediaan bahan baku makanan, terutama beras sebagai kebutuhan utama.
+
+Intervensi pemerintah dalam menentukan volume impor beras di Indonesia menjadi sangat penting untuk memastikan pasokan pangan kepada penduduk. sebagaimana dikutip dalam Salsyabilla (2010), menekankan bahwa beras adalah komoditas yang strategis dengan implikasi sosial, budaya, ekonomi, dan politik. Kebijakan terkait beras seharusnya tidak hanya mempertimbangkan aspek ekonomi, tetapi juga memperhatikan faktor sosial dan politik. Peningkatan volume impor beras di Indonesia adalah hasil dari pertumbuhan penduduk dan peningkatan konsumsi beras di dalam negeri. Oleh karena itu artikel ini ingin membahas mengenai pengaruh produksi beras dan cadangan devisa terhadap impor beras di indonesia
+
+### Ruang Lingkup
+
+Dalam artikel ini akan diberikan batasan yang akan mencakup tentang pengaruh produksi beras dan cadangan devisa terhadap impor beras di indonesia dan ruang lingkup penelitian ini yang hanya menggunakan data dalam kurun waktu 10 tahun (dari tahun 2013 sampai dengan tahun 2022). Kegiatan pengambilan data diperoleh melalui Web Trademap dan Badan Pusat Statistik.
+
+### Rumusan Masalah
+
+Berdasarkan uraian latar belakang masalah diatas, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini. Adapun rumusan masalah tersebut adalah sebagai berikut:
+
+1.	Apakah produksi beras berpengaruh terhadap impor beras di Indonesia?
+2.	Apakah cadangan devisa berpengaruh terhadap impor beras di Indonesia?
+ 
+### Tujuan Penelitian 
+
+Berdasarkan latar belakang dan rumusan masalah di atas, maka penulis dapat memberitahukan tujuan penelitian sebagai berikut:
+
+1. Menganalisis dampak produksi beras terhadap tingkat impor beras di Indonesia.
+2. Meneliti pengaruh cadangan devisa terhadap volume impor beras di Indonesia.
+
+### Manfaat Penelitian 
+
+Adapun manfaat dari penelitian ini sebagai berikut:
+
+1. Memberikan kontribusi kepada pemerintah dalam pembuatan keputusan terkait kebijakan impor beras di Indonesia berdasarkan temuan penelitian.
+2. Menjadi sumber referensi yang berharga baik bagi penelitian lanjutan dari kalangan akademisi maupun non-akademisi.
+
+### Package
+
+Packages yang digunakan sebagai berikut:
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(WDI)
+```
+
+## Studi Pustaka
+
+### Impor
+
+Impor adalah tindakan yang dilakukan oleh berbagai pihak, termasuk perusahaan atau lembaga non-pemerintahan, yang membeli barang dari luar negeri dengan tujuan untuk menjualnya di dalam wilayah negara. Kegiatan impor merupakan upaya yang dapat dilakukan oleh sektor swasta maupun pemerintah untuk mengimpor barang ke dalam daerah pabean. Biasanya, kegiatan ini dilakukan oleh perusahaan atau individu yang dikenal sebagai importir.
+Menurut Ekananda (2015:11), kegiatan impor memiliki keuntungan, di antaranya membantu memenuhi ketersediaan barang dengan skala produksi yang masih rendah. Selain itu, impor juga membantu mengurangi lonjakan harga jual yang disebabkan oleh kurangnya stok dan menghindari kekurangan produk yang dibutuhkan di dalam negeri. Importir bertanggung jawab atas pelaporan barang yang dibeli kepada Direktorat Bea dan Cukai serta bertanggung jawab atas pengawasan administrasi, penerimaan pendapatan negara, pajak pertambahan nilai, dan pajak barang mewah.
+
+### Produksi
+
+Menurut Khusaini (2013:36), produksi dapat diartikan sebagai proses transformasi input atau bahan baku yang telah dibeli oleh perusahaan, kemudian diolah menjadi output atau produk yang siap dijual. Joesron dan Fathorrazi (2012:87) menggambarkan produksi sebagai hasil akhir dari suatu proses atau aktivitas ekonomi yang menggunakan beberapa masukan atau input untuk menghasilkan output. Sementara itu, Assauri (2008:14) menjelaskan bahwa produksi merupakan kegiatan yang bertujuan untuk mentransformasikan masukan atau input menjadi keluaran atau output, melibatkan semua aktivitas yang menghasilkan barang atau jasa, termasuk kegiatan-kegiatan pendukung yang mendukung produksi produk. Dari berbagai penjelasan di atas, dapat dipahami bahwa produksi adalah suatu proses atau kegiatan yang melibatkan input atau bahan baku yang diolah sehingga menghasilkan output atau produk yang dapat dipasarkan.
+
+## Metode Penelitian
+
+### Data
+
+| Tahun | Total Produksi  | Cadangan Devisa |   Nilai Impor  |
+|-------|-----------------|-----------------|----------------|
+| 2013  |   71.280.000    |  99.386.700.000 |   246.002,10   |
+| 2014  |   70.850.000    | 111.861.590.000 |   388.178,50   |
+| 2015  |   75.400.000    | 105.931.030.000 |   351.602,10   |
+| 2016  |   79.350.000    | 116.361.530.000 |   531.841,60   |
+| 2017  |   81.070.000    | 130.196.380.000 |   143.641,60   |
+| 2018  |   59.200.000    | 120.654.270.000 | 1.037.128,30   |
+| 2019  |   54.600.000    | 129.183.280.000 |   184.254,00   |
+| 2020  |   54.650.000    | 135.896.660.000 |   195.408,90   |
+| 2021  |   54.420.000    | 144.905.380.000 |   183.801,80   |
+| 2022  |   54.750.000    | 137.233.270.000 |   202.042,20   |
+
+### Metode analisis
+
+Penelitian ini dilaksanakan secara nasional, melibatkan seluruh wilayah Indonesia, dengan menggunakan data sekunder yang diperoleh dari Badan Pusat Statistik (BPS) dan TRADEMAP. Metode analisis yang diterapkan dalam penelitian ini adalah regresi linier berganda, digunakan untuk mengevaluasi dampak produksi beras dan cadangan devisa terhadap impor beras di Indonesia selama periode 2013-2022. 
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Pada bagian ini dapat ditampilkan data yang telah dikumpulkan :
+```{r}
+setwd('C:/metodologi penelitian/Panji Dwi Prawira')
+read_excel("data metopel.xlsx")
+```
+Diketahui :
+
+X = Produksi Beras Indonesia (Tons)
+
+Y = Cadangan Devisa Indonesia (US Dollar)
+
+S = Nilai Impor Beras Indonesia (Ribu US Dollar)
+
+```{r}
+library("readxl")
+dat<-read_excel("data metopel.xlsx")
+library(ggplot2)
+ggplot(data=dat, aes(x=X+Y, y=S))+
+  geom_point(color='blue', size=2)+
+  labs(title="Plot Terhadap Nilai Imppor",
+       x="Total Produksi & Cadangan Devisa",
+       y="Nilai Impor",
+       caption = "Sumber: Badan Pusat Statistik") +
+  theme_classic()
+```
+
+### Analisis masalah
+
+Hasil pengaruh nilai ekspor terhadap PDRB Kota Riau  diestimasi menggunakan regresi univariat. Hasilnya ditunjukkan sebagai berikut:
+
+```{r}
+library("readxl")
+dat<-read_excel("data metopel.xlsx")
+reg<-lm(S~X+Y,data=dat)
+summary(reg)
+```
+
+Berdasarkan hasil di atas, dapat disimpulkan bahwa nilai p-value yang lebih kecil dari α = 5 persen (0,6231 < 0,05) menunjukkan bahwa produksi beras dan cadangan devisa secara bersama-sama memiliki pengaruh yang signifikan terhadap impor beras di Indonesia dalam periode 2013-2022. Selain itu, nilai R digunakan untuk mengevaluasi sejauh mana variabel independen mempengaruhi variabel dependen. Dengan koefisien determinasi R sebesar 0.1232, hal ini mengindikasikan bahwa sekitar 12.32% dari pengaruh impor beras dapat dijelaskan oleh produksi beras dan cadangan devisa Indonesia. Sementara itu, sebanyak 47.90% sisanya dipengaruhi oleh faktor-faktor lain yang tidak termasuk dalam lingkup penelitian ini.
+
+## Kesimpulan
+
+Hasil analisis menunjukkan bahwa produksi beras dan cadangan devisa secara bersama-sama memiliki pengaruh yang signifikan terhadap impor beras di Indonesia selama periode 2013-2022. Artinya, ketika kedua faktor ini dipertimbangkan secara bersamaan, mereka memiliki dampak yang nyata terhadap volume impor beras. Secara parsial, variabel produksi beras menunjukkan pengaruh positif dan signifikan terhadap impor beras, menandakan bahwa peningkatan produksi beras cenderung berkontribusi pada peningkatan impor beras. Begitu pula, variabel cadangan devisa juga memberikan pengaruh positif dan signifikan terhadap impor beras, mengindikasikan bahwa ketersediaan cadangan devisa dapat memengaruhi keputusan impor beras di Indonesia selama rentang waktu tersebut. Dengan kata lain, faktor-faktor ini secara bersamaan dan secara individu memainkan peran penting dalam menentukan tingkat impor beras di Indonesia
+
+## Referensi
+
+Badan Pusat Statistik. (2022). Retrieved January 16, 2024, from https://www.bps.go.id/id/statistics-table/1/MTA0MyMx/impor-beras-menurut-negara-asal-utama--2000-2022.html
+
+Databoks. (2023). Retrieved January 16, 2024, from https://databoks.katadata.co.id/datapublish/2023/04/20/produksi-padi-indonesia-cenderung-menurun-dalam-10-tahun-terakhir
+
+Databoks. (2023). Retrieved January 16, 2024, from https://databoks.katadata.co.id/datapublish/2023/03/16/naik-3-bulan-berturut-turut-cadangan-devisa-ri-sekarang-us-140-31-miliar
+
+NAUFAL, I. (2019). Analisis Pengaruh Produksi Beras, Jumlah Penduduk dan Cadangan Devisa terhadap impor Beras di Indonesia Tahun 2007-2017 dalam Perspektif Ekonomi Islam (Doctoral dissertation, UIN Raden Intan Lampung).
+
+Zaeroni, R., & Rustariyuni, S. D. (2016). Pengaruh Produksi Beras, Konsumsi Beras, dan Cadangan Devisa terhadap Impor Beras di Indonesia. E-Jurnal Ekonomi Pembangunan Universitas Udayana, 5(9), 993-1010.
